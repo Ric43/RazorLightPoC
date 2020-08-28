@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>za.co.chowned.TemplateResources</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="EtcTemplates\" />
+    <Folder Include="ReportTemplates\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="EmailTemplates\*.cshtml" />
+    <EmbeddedResource Include="EtcTemplates\*.cshtml" />
+    <EmbeddedResource Include="ReportTemplates\*.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="EmailTemplates\EmailBodyTemplate.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RazorLight" Version="2.0.0-beta9" />
+  </ItemGroup>
+
+</Project>

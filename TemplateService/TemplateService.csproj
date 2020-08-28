@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>co.za.chowned.TemplateService</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="microsoft.extensions.localization" Version="3.1.7" />
+    <PackageReference Include="RazorLight" Version="2.0.0-beta9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TemplateResources\TemplateResources.csproj" />
+  </ItemGroup>
+
+</Project>
